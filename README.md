@@ -3,7 +3,7 @@
 
 调整屏幕宽度来看不同设备下的布局
 
-##预览
+## 预览
 desktop: https://codepen.io/appcre/pen/qzvbYx
 
 mobile: https://codepen.io/appcre/pen/ZdPQxp
