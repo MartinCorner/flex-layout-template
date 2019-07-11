@@ -1,0 +1,114 @@
+@import url(_spacing.css);
+
+p{
+  margin: 0;
+}
+
+.cells{
+  margin-bottom: 20px;
+  .cells-title{
+    font-size: 12px;
+    color: #666666;
+    padding: 0 0 4px 16px;
+  }
+  .cell-body {
+    background-color: white;
+    //border-radius: 6px;
+    overflow: hidden;
+    .cell {
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      border: 1px #d5d5d5 solid;
+      &.active {
+        background-color: #d5d5d5;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px #d5d5d5 solid;
+      }
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+.w-iPhone5{
+  max-width: 320px;
+  border: 1px #28a745 solid;
+  &:before {
+    content: '320px iPhone5';
+    background-color: #28a745;
+  }
+}
+.w-iPhone{
+  max-width: 375px;
+  border: 1px #20c997 solid;
+  &:before {
+    content: '375px iPhone6';
+    background-color: #20c997;
+  }
+}
+.w-iPad-p{
+  max-width: 768px;
+  border: 1px #6610f2 solid;
+  &:before {
+    content: '768px iPad';
+    background-color: #6610f2;
+  }
+}
+.w-iPad-l{
+  max-width: 1024px;
+  border: 1px #6f42c1 solid;
+  &:before {
+    content: '1024px iPad';
+    background-color: #6f42c1;
+  }
+}
+.w-laptop{
+  max-width: 1600px;
+  border: 1px #ffc107 solid;
+  &:before {
+    content: '1600px Laptop';
+    background-color: #ffc107;
+  }
+}
+.w-full-hd{
+  max-width: 1920px;
+  border: 1px #dc3545 solid;
+  &:before {
+    content: '1920px Desktop';
+    background-color: #dc3545;
+  }
+}
+.w-iPhone5,
+.w-iPhone,
+.w-iPad-p,
+.w-iPad-l,
+.w-laptop,
+.w-full-hd{
+  padding: 15px;
+  &:before {
+    display: block;
+    font-size: 8px;
+    color: white;
+    width: min-content;
+    padding: 2px 4px;
+    position: relative;
+    top: -15px;
+    left: -15px;
+  }
+}
+
+.position-relative{
+  position: relative;
+}
+
+.border-1{
+  border: 1px #d5d5d5 solid;
+}
+.container {
+  max-width: 1140px;
+}
